@@ -1,0 +1,5 @@
+add_executable(basic_optimization basic_optimization.cpp)
+target_link_libraries(basic_optimization global_racetrajectory_optimization)
+
+add_executable(track_analysis track_analysis.cpp)
+target_link_libraries(track_analysis global_racetrajectory_optimization)

@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/global_trajectory_optimizer.dir/src/main_global_trajectory.cpp.o -o global_trajectory_optimizer  libglobal_racetrajectory_optimization.a /home/jsyun/Programming/ailab_int/minimum_curve/trajectory_planning_helpers_cpp/build/libtrajectory_planning_helpers.a 
