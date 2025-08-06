@@ -27,7 +27,8 @@ std::tuple<MatrixXd, VectorXd> spline_approximation(
     double total_length = el_lengths_orig.sum();
     
     // Determine number of output points based on desired stepsize
-    int n_out = std::max(10, static_cast<int>(std::ceil(total_length / stepsize_reg)));
+    double effective_stepsize = stepsize_reg;  // Use parameter from config
+    int n_out = std::max(10, static_cast<int>(std::ceil(total_length / effective_stepsize)));
     
     // Create uniform spacing
     VectorXd s_uniform = VectorXd::LinSpaced(n_out, 0.0, total_length);
@@ -79,7 +80,7 @@ std::tuple<MatrixXd, VectorXd> spline_approximation(
     
     if (debug) {
         std::cout << "Spline approximation: " << n_points << " -> " << n_out 
-                  << " points, length: " << total_length << " m" << std::endl;
+                  << " points, length: " << total_length << " m, stepsize_reg: " << stepsize_reg << " m" << std::endl;
     }
     
     return std::make_tuple(track_out, el_lengths_out);

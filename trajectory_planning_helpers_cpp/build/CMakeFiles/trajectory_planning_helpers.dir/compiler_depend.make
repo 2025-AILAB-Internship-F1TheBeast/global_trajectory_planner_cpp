@@ -5015,6 +5015,7 @@ CMakeFiles/trajectory_planning_helpers.dir/src/spline_approximation.cpp.o: /home
   /usr/include/c++/11/initializer_list \
   /usr/include/c++/11/ios \
   /usr/include/c++/11/iosfwd \
+  /usr/include/c++/11/iostream \
   /usr/include/c++/11/istream \
   /usr/include/c++/11/limits \
   /usr/include/c++/11/new \
@@ -6003,6 +6004,8 @@ CMakeFiles/trajectory_planning_helpers.dir/src/spline_approximation.cpp.o: /home
 /usr/include/c++/11/bits/sstream.tcc:
 
 /usr/include/eigen3/Eigen/src/Core/Dot.h:
+
+/usr/include/c++/11/iostream:
 
 /usr/include/x86_64-linux-gnu/bits/fp-fast.h:
 

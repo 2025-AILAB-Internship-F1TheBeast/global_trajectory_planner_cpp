@@ -21,7 +21,9 @@ bool GlobalRaceTrajectoryOptimizer::loadConfig(const std::string& config_file) {
         auto config_map = utils::parseConfigFile(config_file);
         
         if (!utils::parseVehicleParams(config_map, veh_params_) ||
-            !utils::parseOptimizationOptions(config_map, optim_opts_)) {
+            !utils::parseOptimizationOptions(config_map, optim_opts_) ||
+            !utils::parseStepsizeOptions(config_map, stepsize_opts_) ||
+            !utils::parseRegSmoothOptions(config_map, reg_smooth_opts_)) {
             return false;
         }
         

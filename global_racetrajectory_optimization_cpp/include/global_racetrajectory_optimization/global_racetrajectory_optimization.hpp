@@ -158,6 +158,8 @@ namespace utils {
     std::map<std::string, std::string> parseConfigFile(const std::string& filename);
     bool parseVehicleParams(const std::map<std::string, std::string>& config, VehicleParameters& params);
     bool parseOptimizationOptions(const std::map<std::string, std::string>& config, OptimizationOptions& opts);
+    bool parseStepsizeOptions(const std::map<std::string, std::string>& config, StepsizeOptions& opts);
+    bool parseRegSmoothOptions(const std::map<std::string, std::string>& config, RegSmoothOptions& opts);
     
     // Track utilities
     MatrixXd importTrack(const std::string& filename, bool flip_track = false);
